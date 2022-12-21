@@ -11,14 +11,14 @@ html{
   left: 0;
   color: white;
   background-color: black;
-  padding-left: 25px;
+  padding-left: 10px;
   border-right: 1px solid #282727;
 }
 
 
 .btns{
   height: 70vh;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 
@@ -27,14 +27,62 @@ html{
 }
 
 .more{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .btns div{
   width: 180px;
   height: 50px;
   margin-left: 6px;
+  margin-bottom: 6px;
 }
 .btns div:hover{
   background-color: #121212;
-  border-radius: 35% 0px 0px 35%;
+  border-radius: var(--bs-border-radius-pill)!important;
+  width: 200px;
+  cursor: pointer;
+}
+
+i{
+  margin-right: 15px;
+  font-size: 1.4rem;
+  padding-left: 15px;
+}
+
+i span {
+  margin: 0;
+}
+
+.btns div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+i:hover {
+  font-size: 1.5rem;
+}
+
+
+@media screen  and (max-width : 1024px){
+  .btns div span{
+    display: none;
+  }
+  .insta span{
+    display: none;
+  }
+  .more span {
+    display: none;
+  }
+  .left-panel{
+    width: 75px;
+  }
+  .btns div:hover{
+    background-color: #121212;
+    border-radius: 0;
+  }
+  .i:hover {
+    background-color: #121212;
+    border-radius: 100%;
+  }
 }
