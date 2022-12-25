@@ -2,7 +2,15 @@ html{
   background-color: #121212;
 }
 
-
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+}
+body{
+  width: 0;
+  height: 0;
+}
 .left-panel {
   width: 245px;
   height: 100vh;
@@ -62,7 +70,7 @@ i span {
   align-items: center;
 }
 
-i:hover {
+.left-panel i:hover {
   font-size: 1.5rem;
 }
 .more:hover{
@@ -71,7 +79,6 @@ i:hover {
   width: 200px;
   cursor: pointer;
 }
-
 
 @media screen  and (max-width : 1024px){
   .btns div span{
@@ -90,8 +97,40 @@ i:hover {
     background-color: #121212;
     border-radius: 0;
   }
-  .i:hover {
+  .left-panel i:hover {
     background-color: #121212;
     border-radius: 100%;
   }
+}
+
+.right-panel{
+  width: 320px;
+  background-color: #121212;
+  color: white;
+  position: absolute;
+  top: 55px;
+  left: 65vw;
+}
+.photo{
+  font-size: 1.9rem;
+}
+.profile-details{
+  font-size: 14px;
+}
+.name{
+  font-weight: bold;
+}
+.username{
+  color: #6b6969;
+}
+
+.switch{
+  margin-left: 120px;
+  font-size: 12px;
+  color: #049dea;
+}
+
+.switch:hover{
+  color: white;
+  cursor: pointer;
 }
