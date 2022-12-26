@@ -125,7 +125,7 @@ i span {
 }
 
 .switch{
-  margin-left: 120px;
+  margin-left: 140px;
   font-size: 12px;
   color: #049dea;
 }
@@ -133,4 +133,8 @@ i span {
 .switch:hover{
   color: white;
   cursor: pointer;
+}
+
+.t{
+  margin-left: 15px;
 }
