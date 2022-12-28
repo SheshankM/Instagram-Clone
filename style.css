@@ -109,7 +109,7 @@ i span {
   color: white;
   position: absolute;
   top: 55px;
-  left: 65vw;
+  left: 62vw;
 }
 .photo{
   font-size: 1.9rem;
@@ -137,4 +137,62 @@ i span {
 
 .t{
   margin-left: 15px;
+}
+
+.suggestions i {
+  font-size: 1.5rem;
+}
+.switch {
+  text-align: end;
+}
+
+.right-panel .align-items-center{
+  justify-content: space-between;
+}
+
+.content{
+  width: 470px;
+  position: relative;
+  left: 460px;
+  top: 26px;
+}
+
+.story-panel {
+  height: 119px;
+  background-color: black;
+  border: 1px solid #282727;
+  border-radius: 10px;
+}
+
+.post{
+  font-size: 14px;
+  height: 807px;
+  background-color: black;
+  border: 1px solid #282727;
+  border-radius: 10px;
+}
+.top{
+  min-height: 58px;
+  margin: 4px 4px 4px 10px;
+}
+.details{
+  width: 368px;
+  margin-left: 15px;
+}
+.details .name{
+  font-weight:bold;
+  color: white;
+}
+.profile-pic{
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+}
+.dots i:hover{
+  color: grey;
+}
+.post .photo{
+  height: 470px;
+  background-color: grey;
 }
