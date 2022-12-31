@@ -162,8 +162,20 @@ i span {
   background-color: black;
   border: 1px solid #282727;
   border-radius: 10px;
+  padding-left: 20px;
 }
-
+.story{
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-color: white;
+}
+.story-username{
+  font-size: 12px;
+}
+.story-panel div{
+  margin-right: 10px;
+}
 .post{
   font-size: 14px;
   height: 807px;
