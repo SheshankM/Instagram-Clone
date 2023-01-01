@@ -201,6 +201,8 @@ i span {
   height: 32px;
   background-color: white;
   border-radius: 50%;
+  border: 2px solid #e422c0 ;
+
 }
 .dots i:hover{
   color: grey;
