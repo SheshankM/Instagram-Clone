@@ -9,6 +9,12 @@ html{
   height: 100vh;
   background-color: #121212;
 }
+img{
+  border-radius: 50%;
+}
+b:hover{
+  cursor: pointer;
+}
 body{
   width: 0;
   height: 0;
@@ -55,7 +61,7 @@ body{
 
 
 
-i{
+.left-panel i{
   margin-right: 15px;
   font-size: 1.4rem;
   padding-left: 15px;
@@ -221,7 +227,7 @@ i span {
   height: 46px;
   align-items: center;
   justify-content: start;
-  padding: 20px 15px 15px 15px;
+  padding: 0px 15px;
 }
 
 .bottom-btns i{
@@ -237,4 +243,73 @@ i span {
 
 .bottom-btns i:hover{
   color: #484646;
+}
+
+
+.likes-info{
+  color: white;
+  margin: 5px 0px;
+  height: 24px;
+  gap: 5px;
+  padding: 0px 15px;
+}
+.liked-by{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.comments-info{
+  color: white;
+  gap: 5px;
+  height: 118px;
+  padding: 0px 15px;
+}
+
+.comments-count{
+  margin: 5px 0px;
+  color: #787575;
+}
+.comment-all{
+  gap: 5px;
+}
+
+.upload-info{
+  color: #787575;
+  padding: 0px 15px;
+  margin: 5px 0px;
+}
+
+.post-comment{
+  height: 40px;
+  border-top: 1px solid #282727;
+  padding: 0px 15px;
+  gap: 5px;
+}
+
+.smiley{
+  color:white;
+  font-size: 1.4rem;
+}
+
+
+textarea{
+  width: 377px;
+  color: white;
+  background-color: black;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.post-btn{
+  background-color: black;
+  color: #b3dbff;
+}
+.post-btn:hover{
+  color: #049dea;
+}
+.all-caught-up{
+  height: 1000px;
 }
