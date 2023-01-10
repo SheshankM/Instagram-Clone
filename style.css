@@ -331,3 +331,30 @@ textarea{
   overflow: hidden;
 }
 
+.three-dots{
+  width:400px;
+  height: 386px;
+  border-radius: 15px;
+  background-color: #262626;
+  color: white;
+  position: absolute;
+  left: 37%;
+  top: 23%;
+  font-size: 14px;
+}
+.warn{
+  font-weight: bold;
+}
+.three-dots div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 400px;
+}
+.warn , .grey{
+  border-bottom: 1px solid #363636;
+}
+.three-dots div:hover{
+  cursor: pointer;
+}

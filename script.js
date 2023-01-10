@@ -83,9 +83,9 @@ let posts = () => {
   <div class="profile-pic"></div><div class="details d-flex  flex-column justify-content-around">
   <div class="name">${name}</div>
   <div class="text-light">loc1</div>
-</div><div class="dots text-light"><i class="fa-solid fa-ellipsis"></i></div>
+</div><div class="dots text-light" ><i class="fa-solid fa-ellipsis" onclick="showdiv()"></i></div>
   </div>
-<div class="photo post-photo"><img src="./pictures/sivaSai_post.jpeg" alt="" width="468px" height="550px"></div>
+<div class="photo post-photo"></div>
 <div class="bottom">
   <div class="bottom-btns d-flex">
       <div class="like"><i class="fa-regular fa-heart"></i></div>
@@ -127,6 +127,7 @@ posts();
 
 let bgpost = document.querySelectorAll('.post');
 
-for (let post of posts) {
-  post.style.backgroundColor = "#000000";
+function showdiv(){
+  document.getElementById('tdots').style.display = 'block';
+  document.style.backgroundColor = '#060606'
 }
