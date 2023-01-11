@@ -228,6 +228,9 @@ i span {
   border: 2px solid #e422c0 ;
 
 }
+.dots{
+  padding: 5px;
+}
 .dots i:hover{
   color: grey;
 }

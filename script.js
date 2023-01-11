@@ -129,5 +129,8 @@ let bgpost = document.querySelectorAll('.post');
 
 function showdiv(){
   document.getElementById('tdots').style.display = 'block';
-  document.style.backgroundColor = '#060606'
+}
+
+function remdiv(){
+  document.getElementById('tdots').style.display = 'none';
 }
