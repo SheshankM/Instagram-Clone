@@ -33,7 +33,7 @@
     <section class="content">
       <div class="story-panel mb-3 d-flex align-items-center">
         <div class="story-1 d-flex flex-column justify-content-around align-items-center">
-          <div class="story mb-2"><img src="./pictures/bannukun.jpg" alt="" width="50px"></div>
+          <div class="story mb-2" ><img src="./pictures/bannukun.jpg" alt="" width="50px" onclick="showStory()"></div>
           <div class="story-username text-light">bannuKun</div>
         </div>
         <div class="story-2 d-flex flex-column justify-content-around align-items-center">
@@ -44,9 +44,10 @@
           <div class="story mb-2"><img src="./pictures/sivaSai.jpg" alt="" width="50px"></div>
           <div class="story-username text-light">__only4_u_</div>
         </div>
+        <div id="story-view" style="display: none;"></div>
       </div>
       <div class="postr d-flex flex-column ">
-        <div class="post" style="background-color: black;"></div>
+        <div class="post"  style="background-color:black !important;"></div>
       </div>
       <div class="all-caught-up"></div>
       <div class="suggested-posts"></div>
@@ -122,7 +123,9 @@
     <div class="grey">Copy link</div>
     <div class="grey">Embed</div>
     <div onclick="remdiv()">Cancel</div>
-  </div></div>
-  <script src="script.js" defer></script>
+  </div>
+</div>
+<script src="script.js" ></script>
 </body>
+
 </html>

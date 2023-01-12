@@ -81,11 +81,11 @@ let posts = () => {
     return (` 
   </div> <div class="top d-flex align-items-center">
   <div class="profile-pic"></div><div class="details d-flex  flex-column justify-content-around">
-  <div class="name">${name}</div>
+  <div class="name">${x.name}</div>
   <div class="text-light">loc1</div>
 </div><div class="dots text-light" ><i class="fa-solid fa-ellipsis" onclick="showdiv()"></i></div>
   </div>
-<div class="photo post-photo"></div>
+<div class="photo post-photo"><img src="./pictures/sivaSai_post.jpeg" alt=""></div>
 <div class="bottom">
   <div class="bottom-btns d-flex">
       <div class="like"><i class="fa-regular fa-heart"></i></div>
@@ -133,4 +133,8 @@ function showdiv(){
 
 function remdiv(){
   document.getElementById('tdots').style.display = 'none';
+}
+
+function showStory(){
+  document.getElementById('story-view').style.display = 'block';
 }

@@ -189,10 +189,11 @@ i span {
   width: 56px;
   border-radius: 50%;
   border: 3px solid #e422c0 ;
-  background-color: white;
 }
 .story img{
   border-radius: 40px;
+  border: 1px solid black;
+  object-fit: fill;
 }
 .story-username{
   font-size: 12px;
@@ -363,4 +364,16 @@ textarea{
 }
 .three-dots div:hover{
   cursor: pointer;
+}
+
+
+
+/* story view style */
+
+.story-view{
+  width: 500px;
+  height: 470px;
+  position: fixed;
+  left: 30%;  
+  background-color: green;
 }
