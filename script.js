@@ -138,3 +138,4 @@ function remdiv(){
 function showStory(){
   document.getElementById('story-view').style.display = 'block';
 }
+
