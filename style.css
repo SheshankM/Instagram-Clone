@@ -162,6 +162,10 @@ i span {
 .suggestions i {
   font-size: 1.5rem;
 }
+.seeall:hover {
+ cursor: pointer;
+ color: grey;
+}
 .switch {
   text-align: end;
 }
@@ -203,13 +207,13 @@ i span {
 }
 .post{
   font-size: 14px;
-  height: 807px;
-  background-color: black !important;
+  height: 840px;
+  width: 468.4px;
   border: 1px solid #282727;
   border-radius: 10px;
-  gap: 30px;
+  background-color: black !important;
 }
-.postr{
+.posts{
   gap: 30px;
 }
 .top{
@@ -239,16 +243,14 @@ i span {
   color: grey;
 }
 .post .photo{
-  height: 470px;
-  width: 470px;
-  object-fit: cover;
-  background-color: grey;
+  background-color: black;
+  border: 1px solid #282727;
+  border-radius: 5px;
 }
-
-.post .photo img{
-  width: 470px;
-  height: 470px;
-
+.pic{
+  width: 468.4px;
+  height: 500px;
+  object-fit: contain;
 }
 .bottom-btns{
   height: 46px;
@@ -280,7 +282,7 @@ i span {
   gap: 5px;
   padding: 0px 15px;
 }
-.liked-by{
+.liked-by img{
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -341,11 +343,6 @@ textarea{
   height: 1000px;
 }
 
-.post-photo {
-  width: 470px;
-  height: 500px;
-  object-fit: contain;
-}
 
 .three-dots{
   width:400px;

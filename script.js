@@ -74,7 +74,7 @@ let names = [
 // }
 
 
-let post = document.querySelector('.post');
+let post = document.getElementById('post');
 
 let posts = () => {
   post.innerHTML = names.map((x) =>{
@@ -85,7 +85,7 @@ let posts = () => {
   <div class="text-light">loc1</div>
 </div><div class="dots text-light" ><i class="fa-solid fa-ellipsis" onclick="showdiv()"></i></div>
   </div>
-<div class="photo post-photo"><img src="./pictures/sivaSai_post.jpeg" alt=""></div>
+<div class="photo"><img src="./pictures/sivaSai_post.jpeg" alt="" class="pic" style="object-fit:contain"></div>
 <div class="bottom">
   <div class="bottom-btns d-flex">
       <div class="like"><i class="fa-regular fa-heart"></i></div>
