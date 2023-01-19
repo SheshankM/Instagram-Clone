@@ -81,9 +81,7 @@ i span {
   align-items: center;
 }
 
-.left-panel i:hover {
-  font-size: 1.5rem;
-}
+
 .more:hover{
   background-color: #121212;
   border-radius: var(--bs-border-radius-pill)!important;
@@ -237,7 +235,7 @@ i span {
 
 }
 .dots{
-  padding: 5px;
+  padding: 10px;
 }
 .dots i:hover{
   color: grey;
