@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="shortcut icon" href="./favicon.ico">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="./favicon.ico" />
   <title>Instagram</title>
-</head> 
+</head>
+
 <body>
-  
-  
   <div class="container">
     <section class="left-panel d-flex flex-column align-items-start justify-content-between">
-      <div class="insta pt-4 "><i class="fa-brands fa-instagram"></i><span>𝕀𝕟𝕤𝕥𝕒𝕘𝕣𝕒𝕞</span></div>
-      <div class="btns d-flex flex-column ">
-        <div class="home mb-2 enl"><i class="fa-solid fa-house"></i><span>Home</span></div>
-        <div class="search mb-2 enl"><i class="fa-sharp fa-solid fa-magnifying-glass"></i><span>Search</span></div>
-        <div class="explore mb-2 enl"><i class="fa-regular fa-compass"></i><span>Explore</span></div>
-        <div class="reel mb-2 enl"><i class="fa-solid fa-clapperboard"></i><span>Reels</span></div>
-        <div class="messages mb-2 enl"><i class="fa-brands fa-facebook-messenger"></i><span>Messages</span></div>
-        <div class="likes mb-2 enl"><i class="fa-regular fa-heart"></i><span>Likes</span></div>
-        <div class="create mb-2 enl"><i class="fa-regular fa-square-plus"></i><span>Create</span></div>
-        <div class="profile mb-2 enl"><i class="fa-regular fa-user"></i><span>Profile</span></div>
+      <div class="insta pt-4">
+        <i class="fa-brands fa-instagram"></i><span>𝕀𝕟𝕤𝕥𝕒𝕘𝕣𝕒𝕞</span>
       </div>
-      <div class="more mb-5 "><i class="fa-solid fa-grip-lines"></i><span>More</span></div>
+      <div class="btns d-flex flex-column">
+        <div class="home mb-2 enl">
+          <i class="fa-solid fa-house"></i><span>Home</span>
+        </div>
+        <div class="search mb-2 enl">
+          <i class="fa-sharp fa-solid fa-magnifying-glass"></i><span>Search</span>
+        </div>
+        <div class="explore mb-2 enl">
+          <i class="fa-regular fa-compass"></i><span>Explore</span>
+        </div>
+        <div class="reel mb-2 enl">
+          <i class="fa-solid fa-clapperboard"></i><span>Reels</span>
+        </div>
+        <div class="messages mb-2 enl">
+          <i class="fa-brands fa-facebook-messenger"></i><span>Messages</span>
+        </div>
+        <div class="likes mb-2 enl">
+          <i class="fa-regular fa-heart"></i><span>Likes</span>
+        </div>
+        <div class="create mb-2 enl">
+          <i class="fa-regular fa-square-plus"></i><span>Create</span>
+        </div>
+        <div class="profile mb-2 enl">
+          <i class="fa-regular fa-user"></i><span>Profile</span>
+        </div>
+      </div>
+      <div class="more mb-5" id="morebtn">
+        <i class="fa-solid fa-grip-lines"></i><span>More</span>
+      </div>
+      <div id="more-dd" style="display: none;"> 
+      <div class="more-dropdown" >
+        <div class="settings"><span>Settings</span><span><i class="fa-solid fa-gear"></i></span></div>
+        <div class="saved"><span>Saved</span><span><i class="fa-regular fa-bookmark"></i></span></div>
+        <div class="switch-app"><span>Switch appearance</span><span><i class="fa-regular fa-moon"></i></span></div>
+        <div class="your-actvity"><span>Your activity</span><span><i class="fa-regular fa-clock"></i></span></div>
+        <div class="report-problem"><span>Report a problem</span><span><i class="fa-solid fa-circle-exclamation"></i></span></div>
+        <div class="switch-accounts">Switch accounts</div>
+        <div class="logout">Log out</div>
+      </div>
+    </div>
+
     </section>
 
     <section class="content">
       <div class="story-panel mb-3 d-flex align-items-center">
         <div class="story-1 d-flex flex-column justify-content-around align-items-center">
-          <div class="story mb-2" ><img src="./pictures/bannukun.jpg" alt="" width="50px" onclick="showStory()"></div>
+          <div class="story mb-2">
+            <img src="./pictures/bannukun.jpg" alt="" width="50px" onclick="showStory()" />
+          </div>
           <div class="story-username text-light">bannuKun</div>
         </div>
         <div class="story-2 d-flex flex-column justify-content-around align-items-center">
-          <div class="story mb-2"><img src="./pictures/poorna.jpg" alt="" width="50px"></div>
+          <div class="story mb-2">
+            <img src="./pictures/poorna.jpg" alt="" width="50px" />
+          </div>
           <div class="story-username text-light">poorna</div>
         </div>
         <div class="story-3 d-flex flex-column justify-content-around align-items-center">
-          <div class="story mb-2"><img src="./pictures/sivaSai.jpg" alt="" width="50px"></div>
+          <div class="story mb-2">
+            <img src="./pictures/sivaSai.jpg" alt="" width="50px" />
+          </div>
           <div class="story-username text-light">__only4_u_</div>
         </div>
-        <div id="story-view" style="display: none;"></div>
+        <div id="story-view" style="display: none"></div>
       </div>
-      <div class="posts d-flex flex-column ">
-        <div class="post" id="post"> </div>
+      <div class="posts d-flex flex-column">
+        <div class="post" id="post"></div>
       </div>
-      
     </section>
 
     <section class="right-panel">
@@ -62,69 +100,67 @@
         <div class="switch">Switch</div>
       </div>
 
-      <div class="t d-flex align-items-center justify-content-between mt-3 mr-2  mb-2">
-         <span >Suggestions For You</span>
-         <span class="small seeall">See all</span>
+      <div class="t d-flex align-items-center justify-content-between mt-3 mr-2 mb-2">
+        <span>Suggestions For You</span>
+        <span class="small seeall">See all</span>
       </div>
       <div class="suggestions">
-      <div class="profile-details d-flex align-items-center mb-2">
-        <i class="fa-solid fa-user photo"></i>
-        <div class="ids d-flex flex-column justify-content-around">
-          <div class="name">abcd</div>
-          <div class="username">alphabets</div>
+        <div class="profile-details d-flex align-items-center mb-2">
+          <i class="fa-solid fa-user photo"></i>
+          <div class="ids d-flex flex-column justify-content-around">
+            <div class="name">abcd</div>
+            <div class="username">alphabets</div>
+          </div>
+          <div class="switch">Follow</div>
         </div>
-        <div class="switch">Follow</div>
-      </div>
-      <div class="profile-details d-flex align-items-center mb-2">
-        <i class="fa-solid fa-user photo"></i>
-        <div class="ids d-flex flex-column justify-content-around">
-          <div class="name">1234</div>
-          <div class="username">numbers</div>
+        <div class="profile-details d-flex align-items-center mb-2">
+          <i class="fa-solid fa-user photo"></i>
+          <div class="ids d-flex flex-column justify-content-around">
+            <div class="name">1234</div>
+            <div class="username">numbers</div>
+          </div>
+          <div class="switch">Follow</div>
         </div>
-        <div class="switch">Follow</div>
-      </div>
-      <div class="profile-details d-flex align-items-center mb-2">
-        <i class="fa-solid fa-user photo"></i>
-        <div class="ids d-flex flex-column justify-content-around">
-          <div class="name">.,?</div>
-          <div class="username">punctuation</div>
+        <div class="profile-details d-flex align-items-center mb-2">
+          <i class="fa-solid fa-user photo"></i>
+          <div class="ids d-flex flex-column justify-content-around">
+            <div class="name">.,?</div>
+            <div class="username">punctuation</div>
+          </div>
+          <div class="switch">Follow</div>
         </div>
-        <div class="switch">Follow</div>
-      </div>
-      <div class="profile-details d-flex align-items-center mb-2">
-        <i class="fa-solid fa-user photo"></i>
-        <div class="ids d-flex flex-column justify-content-around">
-          <div class="name">+-/*</div>
-          <div class="username">operators</div>
+        <div class="profile-details d-flex align-items-center mb-2">
+          <i class="fa-solid fa-user photo"></i>
+          <div class="ids d-flex flex-column justify-content-around">
+            <div class="name">+-/*</div>
+            <div class="username">operators</div>
+          </div>
+          <div class="switch">Follow</div>
         </div>
-        <div class="switch">Follow</div>
-      </div>
-      <div class="profile-details d-flex align-items-center mb-2">
-        <i class="fa-solid fa-user photo"></i>
-        <div class="ids d-flex flex-column justify-content-around">
-          <div class="name">{}[]()</div>
-          <div class="username">brackets</div>
+        <div class="profile-details d-flex align-items-center mb-2">
+          <i class="fa-solid fa-user photo"></i>
+          <div class="ids d-flex flex-column justify-content-around">
+            <div class="name">{}[]()</div>
+            <div class="username">brackets</div>
+          </div>
+          <div class="switch">Follow</div>
         </div>
-        <div class="switch">Follow</div>
       </div>
-    </div>
-    
     </section>
-    
   </div>
-  <div id="tdots" style="display: none;" >
-  <div class="three-dots d-flex flex-column align-items-center justify-content-center" >
-    <div class="text-danger warn">Report</div>
-    <div class="text-danger warn">Unfollow</div>
-    <div class="grey">Add to favorites</div>
-    <div class="grey">Go to post</div>
-    <div class="grey">Share to..</div>
-    <div class="grey">Copy link</div>
-    <div class="grey">Embed</div>
-    <div onclick="remdiv()">Cancel</div>
+  <div id="tdots" style="display: none;">
+    <div class="three-dots d-flex flex-column align-items-center justify-content-center">
+      <div class="text-danger warn">Report</div>
+      <div class="text-danger warn">Unfollow</div>
+      <div class="grey">Add to favorites</div>
+      <div class="grey">Go to post</div>
+      <div class="grey">Share to..</div>
+      <div class="grey">Copy link</div>
+      <div class="grey">Embed</div>
+      <div onclick="remdiv()">Cancel</div>
+    </div>
   </div>
-</div>
-<script src="script.js" ></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

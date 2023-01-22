@@ -138,4 +138,13 @@ function remdiv(){
 function showStory(){
   document.getElementById('story-view').style.display = 'block';
 }
-
+let moredd =   document.getElementById('more-dd');
+let more = document.getElementById('morebtn');
+more.addEventListener('click',()=>{
+  if(moredd.style.display === "none"){
+    moredd.style.display = "";
+  }
+  else{
+    moredd.style.display = "none";
+  }
+})
