@@ -228,6 +228,7 @@ body{
   border-radius: 40px;
   border: 1px solid black;
   object-fit: fill;
+  overflow: hidden;
 }
 .story-username{
   font-size: 12px;
@@ -235,13 +236,13 @@ body{
 .story-panel div{
   margin-right: 10px;
 }
-.post{
+.post > div{
   font-size: 14px;
   height: 840px;
   width: 468.4px;
   border: 1px solid #282727;
   border-radius: 10px;
-  background-color: black !important;
+  background-color: black;
 }
 .posts{
   gap: 30px;
