@@ -13,6 +13,55 @@ let names = [
   },
 ];
 
+
+
+let storyDetails = [
+  {
+    name:'poorna',
+    img:`./pictures/poorna.jpg`
+  },
+  {
+    name:'siva_sai',
+    img:`/pictures/sivaSai.jpg`
+  },
+  {
+    name:'bannukun',
+    img:`./pictures/bannukun.jpg`
+  },
+  {
+    name:'asdfsd',
+    img:`/pictures/sivaSai.jpg`
+  }
+]
+
+
+let storyPanel = document.querySelector('.story-panel');
+let stories = () =>{
+  storyPanel.innerHTML = storyDetails.map((storydet)=>{
+    return `
+    <div class="story-1 d-flex flex-column justify-content-around align-items-center">
+          <div class="story mb-2">
+            <img src="${storydet.img}" alt="" width="50px" onclick="showStory()" />
+          </div>
+          <div class="story-username text-light">${storydet.name}</div>
+        </div>
+    `
+  })
+  storyPanel.innerHTML += `<div style="width:56px;height:56px;font-size:2.5rem;color: black;background-color:white ;border-radius:50%;text-align:center" onclick="addonestory()"><i class="fa-solid fa-plus"></i></div>
+  `
+}
+stories();
+
+const addonestory = () =>{
+  let storyUserName = Math.floor(Math.random()*100000).toString();
+  storyDetails.push({
+    name:`${storyUserName}`,
+    img:'/pictures/sivaSai.jpg' 
+  });
+  stories();
+}
+
+
 let post = document.getElementById("post");
 
 let posts = () => {
@@ -89,3 +138,14 @@ more.addEventListener("click", () => {
     moredd.style.display = "none";
   }
 });
+
+
+const addmore = () =>{
+  let username = (Math.floor(Math.random()*10000)).toString();
+  names.push({name:`${username}`})
+  posts();
+  console.log(names.length);
+  
+};
+
+

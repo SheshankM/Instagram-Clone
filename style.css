@@ -217,7 +217,17 @@ body{
   border: 1px solid #282727 ;
   border-radius: 10px;
   padding-left: 20px;
+  overflow-x: scroll;
 }
+.story-panel::-webkit-scrollbar {
+  width: 10px;
+  background-color: #a09d9d;
+}
+
+.story-panel::-webkit-scrollbar-thumb {
+background-color: #161616;
+}
+
 .story{
   height: 56px;
   width: 56px;
@@ -401,6 +411,11 @@ textarea{
 }
 .three-dots div:hover{
   cursor: pointer;
+}
+
+.content > .btn {
+  display: block;
+  align-self: center;
 }
 
 
