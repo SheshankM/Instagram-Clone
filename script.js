@@ -46,7 +46,7 @@ let stories = () =>{
           <div class="story-username text-light">${storydet.name}</div>
         </div>
     `
-  })
+  }).join("");
   storyPanel.innerHTML += `<div style="width:56px;height:56px;font-size:2.5rem;color: black;background-color:white ;border-radius:50%;text-align:center" onclick="addonestory()"><i class="fa-solid fa-plus"></i></div>
   `
 }
@@ -110,7 +110,7 @@ let posts = () => {
     </div>
     <div>
     </div>
-  </div>`;
+  </div>`
   });
 };
 
@@ -120,17 +120,25 @@ let bgpost = document.querySelectorAll(".post");
 
 function showdiv() {
   document.getElementById("tdots").style.display = "block";
+  
 }
+const dotsContainer = document.getElementById("tdots");
+
+dotsContainer.addEventListener("click",function(event){
+  if(!event.target.closest('.tdots')){
+    remdiv();
+  }
+})
 
 function remdiv() {
   document.getElementById("tdots").style.display = "none";
 }
-
 function showStory() {
   document.getElementById("story-view").style.display = "block";
 }
 let moredd = document.getElementById("more-dd");
 let more = document.getElementById("morebtn");
+
 more.addEventListener("click", () => {
   if (moredd.style.display === "none") {
     moredd.style.display = "";
