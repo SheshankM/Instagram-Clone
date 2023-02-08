@@ -47,7 +47,7 @@ let stories = () =>{
         </div>
     `
   }).join("");
-  storyPanel.innerHTML += `<div style="width:56px;height:56px;font-size:2.5rem;color: black;background-color:white ;border-radius:50%;text-align:center" onclick="addonestory()"><i class="fa-solid fa-plus"></i></div>
+  storyPanel.innerHTML += `<div style="width:56px;height:56px;font-size:2.5rem;color: black;background-color:white ;border-radius:50%;text-align:center;margin-bottom: 20px" onclick="addonestory()"><i class="fa-solid fa-plus"></i></div>
   `
 }
 stories();

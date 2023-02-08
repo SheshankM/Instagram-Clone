@@ -244,6 +244,7 @@ background-color: #161616;
   font-size: 12px;
 }
 .story-panel div{
+  align-self: center;
   margin-right: 7px;
 }
 .post > div{
