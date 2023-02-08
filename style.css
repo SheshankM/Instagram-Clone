@@ -23,7 +23,7 @@ body{
   height: 0;
 }
 .left-panel {
-  width: 245px;
+  width: 16vw;
   height: 100vh;
   position: fixed;
   top: 0;
