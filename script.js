@@ -1,15 +1,19 @@
 let names = [
   {
-    name: "sheshank",
+    name: "sivasai",
+    picUrl:`./pictures/sivaSai_post.jpeg`
   },
   {
     name: "poorna",
+    picUrl:`./pictures/poorna.jpg`
   },
   {
     name: "sai",
+    picUrl:`./pictures/sivaSai.jpg`
   },
   {
-    name: "shank_it",
+    name: "bannukun",
+    picUrl:`./pictures/bannukun.jpg`
   },
 ];
 
@@ -66,17 +70,18 @@ let post = document.getElementById("post");
 
 let posts = () => {
   post.innerHTML = names.map((x) => {
+    const {name,picUrl} = x;
     return ` 
     <div>
     <div class="top d-flex align-items-center">
       <div class="profile-pic"></div>
       <div class="details d-flex  flex-column justify-content-around">
-        <div class="name">${x.name}</div>
+        <div class="name">${name}</div>
         <div class="text-light">loc1</div>
       </div>
       <div class="dots text-light"><i class="fa-solid fa-ellipsis" onclick="showdiv()"></i></div>
     </div>
-    <div class="photo"><img src="./pictures/sivaSai_post.jpeg" alt="" class="pic" style="object-fit:contain"></div>
+    <div class="photo"><img src=${picUrl} alt="" class="pic" style="object-fit:contain"></div>
     <div class="bottom">
       <div class="bottom-btns d-flex">
         <div class="like"><i class="fa-regular fa-heart"></i></div>
